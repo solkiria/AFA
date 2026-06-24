@@ -57,6 +57,26 @@ color:#333;
 font-weight:500;
 }
 
+.language-selector{ 
+display:
+flex;
+align-items:center;
+gap:10px;
+}
+
+.language-selector img{
+width:32px;
+height:32px;
+border-radius:50%;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+.language-selector img:hover{
+transform:scale(1.1);
+}
+
 .hero{
 height:100vh;
 background:url('../img/hero.jpg') center/cover;
