@@ -220,56 +220,50 @@ font-size:2.5rem;
 /*Apartados añadidos*/
   
 /* Contenedor a pantalla completa */
-.imagen-completa-seccion {
-    position: relative;
-    width: 100vw;               /* Fuerza el 100% del ancho del navegador */
+.pdf-completo-seccion {
+    width: 100vw;               /* Ocupa el 100% del ancho del navegador */
     left: 50%;
     right: 50%;
     margin-left: -50vw;
-    margin-right: -50vw;        /* Rompe los márgenes de cualquier contenedor padre */
-    overflow: hidden;
+    margin-right: -50vw;        /* Rompe los márgenes del contenedor padre */
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-/* Imagen completamente adaptativa */
-.imagen-completa-seccion img {
+/* El visor del PDF adaptativo */
+.visor-pdf {
     width: 100%;
-    height: auto;               /* Mantiene la proporción en móvil y PC */
-    display: block;
-    object-fit: cover;
+    height: 600px;              /* Altura ideal para leer en PC */
+    border: none;
+    background: #f7f9fc;
 }
 
-/* Botón de descarga elegante */
-.btn-descarga {
-    position: absolute;         /* Flota encima de la imagen */
-    bottom: 20px;               /* Lo posiciona en la parte inferior */
-    background: rgba(0, 153, 204, 0.9); /* El color azul de tu web con opacidad */
+/* Botón de descarga debajo del PDF */
+.btn-descarga-pdf {
+    margin-top: 20px;
+    background: #0099cc;        /* El azul de tu web */
     color: white !important;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 14px 28px;
     border-radius: 30px;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    transition: transform 0.2s, background 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
 }
 
-/* Efecto al pasar el ratón */
-.btn-descarga:hover {
+.btn-descarga-pdf:hover {
     transform: scale(1.05);
-    background: rgba(0, 153, 204, 1);
 }
 
-/* Ajuste para pantallas móviles */
+/* Ajustes especiales para móviles */
 @media (max-width: 768px) {
-    .btn-descarga {
-        padding: 10px 18px;
-        font-size: 0.9rem;
-        bottom: 15px;
+    .visor-pdf {
+        height: 450px;          /* Reducimos la altura en móviles para que sea más cómodo */
     }
+}
 }
   
