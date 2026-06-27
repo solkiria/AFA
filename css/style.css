@@ -215,26 +215,3 @@ grid-template-columns:1fr;
 .hero h1{
 font-size:2.5rem;
 }
-
-/* Fragmentos añadidos */
-  
-.lista-centrada {
-    display: flex !important;
-    justify-content: center !important; /* Centra el bloque entero en la pantalla */
-    width: 100% !important;             /* Obliga a ocupar todo el ancho disponible */
-    margin: 30px 0 !important;
-    text-align: left !important;        /* Evita que el texto se rompa por herencia */
-}
-
-.lista-centrada > div {
-    display: inline-block !important;
-    text-align: left !important;        /* Alinea el título y la lista a la izquierda */
-    max-width: 100% !important;
-}
-
-.lista-centrada ul {
-    margin-top: 10px !important;
-    padding-left: 20px !important;      /* Espacio necesario para que se vean los puntos */
-    list-style-type: disc !important;   /* Fuerza a que aparezcan las viñetas redondas */
-}
-}
