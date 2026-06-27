@@ -86,7 +86,7 @@ align-items:center;
 }
 
 .hero-overlay{
-background:rgba(0,0,0,.55);
+background:rgba(255, 215, 0, .55);
 padding:50px;
 color:#fff;
 text-align:center;
