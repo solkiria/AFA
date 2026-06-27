@@ -219,15 +219,19 @@ font-size:2.5rem;
 /* Fragmentos añadidos */
   
 .lista-centrada {
-    max-width: fit-content; /* Ajusta el contenedor al ancho real del texto */
-    margin: 20px auto;      /* El 'auto' centra todo el bloque en la pantalla */
-    text-align: left;       /* Mantiene el título alineado a la izquierda */
+    display: flex;
+    justify-content: center; /* Centra todo el grupo en la pantalla */
+    margin: 20px 0;
+}
+
+.lista-centrada > div {
+    display: inline-block;
+    text-align: left; /* Alinea el título y la lista a la izquierda entre ellos */
 }
 
 .lista-centrada ul {
-    text-align: left;       /* Mantiene las viñetas alineadas a la izquierda */
-    padding-left: 20px;     /* Deja espacio para los puntos de la lista */
-    margin-top: 10px;       /* Separa un poco la lista del título */
+    margin-top: 10px;
+    padding-left: 20px; /* Deja espacio para los círculos de las viñetas */
 }
 
 }
