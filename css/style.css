@@ -222,7 +222,7 @@ font-size:2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra todo el bloque en la pantalla */
-    text-align: left;    /* Mantiene el texto alineado a la izquierda */
+    text-align: center;    /* Mantiene el texto alineado a la izquierda */
     margin: 20px 0;      /* Da espacio arriba y abajo */
 }
 
