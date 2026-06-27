@@ -221,17 +221,23 @@ font-size:2.5rem;
   
 /* Contenedor a pantalla completa */
 .pdf-completo-seccion {
-    width: 100vw;               /* Ocupa el 100% del ancho del navegador */
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;        /* Rompe los márgenes del contenedor padre */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+   /* width: 100vw;  */             /* Ocupa el 100% del ancho del navegador */
+   /*  left: 50%;*/
+  /*   right: 50%;*/
+  /*   margin-left: -50vw;*/
+  /*   margin-right: -50vw;    */    /* Rompe los márgenes del contenedor padre */
+  /*   position: relative;*/
+  /*   display: flex;*/
+  /*   flex-direction: column;*/
+  /*   align-items: center;*/
+  /*   margin-top: 40px;*/
+  /*   margin-bottom: 40px;*/
+    width: 100%;                /* Ocupa todo el ancho disponible de la pantalla */
+    display: flex !important;
+    flex-direction: column !important; /* Obliga a que el botón se ponga DEBAJO del iframe */
+    align-items: center !important;    /* Centra el botón horizontalmente */
+    margin: 40px 0;
+    padding: 0;
 }
 
 /* El visor del PDF adaptativo */
